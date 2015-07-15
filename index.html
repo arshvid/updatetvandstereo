@@ -1,0 +1,65 @@
+<?php
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+function FlexFillerIn(fillWith,fadeOut1,fadeOut2){
+	
+	$(fillWith).stop().animate({flex: '+=2000'}, 700);
+	$(fadeOut1).stop().fadeOut( 700 );
+	$(fadeOut2).stop().fadeOut( 700 );
+	$(".banner_img_space").stop().fadeOut( 700 );
+	
+}
+
+function FlexFillerOut(fillWith,fadeIn1,fadeIn2){
+	
+	$(fillWith).stop().animate({flex: '-=2000'}, 10);
+	$(fillWith).stop().fadeOut( 10 );
+	$(fillWith).stop().fadeIn( 400 );
+	$(fadeIn1).stop().fadeIn( 400 );
+	$(fadeIn2).stop().fadeIn( 400 );
+	$(".banner_img_space").stop().fadeIn( 400 );
+	
+}
+
+$(document).ready(function() {
+	
+	$('.banner_img_left').mouseenter(function(){FlexFillerIn(".banner_img_left",".banner_img_middle",".banner_img_right");});
+	$('.banner_img_middle').mouseenter(function(){FlexFillerIn(".banner_img_middle",".banner_img_left",".banner_img_right");});
+	$('.banner_img_right').mouseenter(function(){FlexFillerIn(".banner_img_right",".banner_img_middle",".banner_img_left");});
+	$('.banner_img_left').mouseleave(function(){FlexFillerOut(".banner_img_left",".banner_img_middle",".banner_img_right");});
+	$('.banner_img_middle').mouseleave(function(){FlexFillerOut(".banner_img_middle",".banner_img_left",".banner_img_right");});
+	$('.banner_img_right').mouseleave(function(){FlexFillerOut(".banner_img_right",".banner_img_middle",".banner_img_left");});
+	
+});
+</script>
+<link rel="stylesheet" type="text/css"
+	href="/updatetvandstereo/res/updatetvandstereo.css">
+<link href='http://fonts.googleapis.com/css?family=Lato'
+	rel='stylesheet' type='text/css'>
+<title>Welcome</title>
+</head>
+<body>
+	<div class="main_container">
+		<div class="main_banner">
+			<a href="http://updatetvandstereo.com/"> <img alt="logo"
+				src="/updatetvandstereo/res/banner_logo_w.png"> </a>
+		</div>
+		<div class="selection_banner">
+			<div class = "selection_banner_img_holder">
+				<div class = "banner_img_left"><a href="http://www.updatedirect.ca/">&nbsp;</a></div>
+				<div class = "banner_img_space"></div>
+				<div class = "banner_img_middle"><a href="http://google.com">&nbsp;</a></div>
+				<div class = "banner_img_space"></div>
+				<div class = "banner_img_right"><a href="/updatetvandstereo/automation.html">&nbsp;</a></div>
+			</div>
+		</div>
+		<div class = "footer_img"></div>
+		<div class = "main_footer">Copyright 2015 Update TV & Stereo. All Rights Reserved.</div>
+	</div>
+</body>
+</html>

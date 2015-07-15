@@ -1,0 +1,211 @@
+@CHARSET "ISO-8859-1";
+/*Main page*/
+.main_banner {
+	margin: 0 auto;
+	height: 150px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+
+.selection_banner {
+	margin: 0 auto;
+	height: 700px;
+	background-color: #E8E8E8;
+}
+
+.selection_banner_img_holder {
+	border-top-style: solid;
+	border-top-width: 50px;
+	border-top-color: #E8E8E8;
+	height: 620px;
+	width: 70%;
+	margin: 0 auto;
+	display:flex;
+	flex-direction: row;
+	text-decoration: none;
+	}
+
+.banner_img_left {
+	background-image: url('/updatetvandstereo/res/shop_img.jpg');
+    flex: 1;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+	}
+.banner_img_middle {
+	background-image: url('/updatetvandstereo/res/elevated_img.jpg');
+    flex: 1;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+	}
+.banner_img_right {
+	background-image: url('/updatetvandstereo/res/home_automation.jpg');
+    flex: 1;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+	}
+	
+.banner_img_space {
+	background-image: url('/updatetvandstereo/res/banner_space.gif');
+    flex: 0.1;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+	}
+
+.banner_img_left a {
+	position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    text-decoration:none; /* Makes sure the link   doesn't get underlined */
+    z-index:10; /* raises anchor tag above everything else in div */
+    background-color:white; /*workaround to make clickable in IE */
+    opacity: 0; /*workaround to make clickable in IE */
+    filter: alpha(opacity=1); /*workaround to make clickable in IE */
+	}
+
+.banner_img_middle a {
+	position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    text-decoration:none; /* Makes sure the link   doesn't get underlined */
+    z-index:10; /* raises anchor tag above everything else in div */
+    background-color:white; /*workaround to make clickable in IE */
+    opacity: 0; /*workaround to make clickable in IE */
+    filter: alpha(opacity=1); /*workaround to make clickable in IE */
+	}
+	
+.banner_img_right a {
+	position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    text-decoration:none; /* Makes sure the link   doesn't get underlined */
+    z-index:10; /* raises anchor tag above everything else in div */
+    background-color:white; /*workaround to make clickable in IE */
+    opacity: 0; /*workaround to make clickable in IE */
+    filter: alpha(opacity=1); /*workaround to make clickable in IE */
+	}
+
+.hide {
+	display: none;
+}
+
+.footer_img {
+	background-image: url('/updatetvandstereo/res/main_footer_final.gif');
+    width: 500px;
+    height: 45px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+	}
+	
+.main_footer {
+	margin: 0 auto;
+	color: #E8E8E8;
+	text-align: center;
+	}
+
+.auto_first {
+    -webkit-animation: bannermove 15s linear infinite;
+       -moz-animation: bannermove 15s linear infinite;
+        -ms-animation: bannermove 15s linear infinite;
+         -o-animation: bannermove 15s linear infinite;
+            animation: bannermove 15s linear infinite;
+	}
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -1020px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -1020px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -1020px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -1020px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -1020px;
+ }
+ 
+}
+
+.auto_container {
+	width: 1000px;
+	height: 1000px;
+	margin: 50px auto;
+    background-color: #00ff00;
+    overflow: hidden;
+    border: 30px solid;
+    -webkit-border-image: url(/updatetvandstereo/res/auto_border.png) 45 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(/updatetvandstereo/res/auto_border.png) 45 stretch; /* Opera 11-12.1 */
+    border-image: url(/updatetvandstereo/res/auto_border.png) 45 stretch;
+	}
+	
+.auto_photobanner {
+	height: 200px;
+	width: 2000px;
+	margin-bottom: 25px;
+	overflow: hidden;
+	}
+
+.auto_iframe_holder {
+	height: 500px;
+	width: 85%;
+	margin: 25px auto;
+	}
+
+.auto_product_info_holder {
+	width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+	}

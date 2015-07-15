@@ -1,0 +1,47 @@
+<?php
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+function replacerAE(p1) {
+alert (p1);
+$("<p>"+p1+"</p>").replaceAll("p");
+}
+</script>
+<link rel="stylesheet" type="text/css"
+	href="/updatetvandstereo/res/updatetvandstereo.css">
+<link href='http://fonts.googleapis.com/css?family=Lato'
+	rel='stylesheet' type='text/css'>
+<title>Home Automation</title>
+</head>
+<body>
+	<div class="auto_container">
+		<div class="auto_photobanner">
+			<a href="/updatetvandstereo/1" target="auto_iframe"><img class="auto_first" src="/updatetvandstereo/res/auto_1.gif" alt=""></a>
+			<a href="/updatetvandstereo/2" target="auto_iframe"><img class="auto_2" src="/updatetvandstereo/res/auto_2.gif" alt=""></a>
+			<a href="/updatetvandstereo/3" target="auto_iframe"><img class="auto_3" src="/updatetvandstereo/res/auto_3.gif" alt=""></a>
+			<a href="/updatetvandstereo/4" target="auto_iframe"><img class="auto_4" src="/updatetvandstereo/res/auto_4.gif" alt=""></a>
+			<a href="/updatetvandstereo/5" target="auto_iframe"><img class="auto_5" src="/updatetvandstereo/res/auto_r.gif" alt=""></a>
+			<a href="/updatetvandstereo/6" target="auto_iframe"><img class="auto_6" src="/updatetvandstereo/res/auto_1.gif" alt=""></a>
+			<a href="/updatetvandstereo/7" target="auto_iframe"><img class="auto_7" src="/updatetvandstereo/res/auto_2.gif" alt=""></a>
+			<a href="/updatetvandstereo/8" target="auto_iframe"><img class="auto_8" src="/updatetvandstereo/res/auto_3.gif" alt=""></a>
+			<a href="/updatetvandstereo/9" target="auto_iframe"><img class="auto_9" src="/updatetvandstereo/res/auto_4.gif" alt=""></a>
+			<a href="/updatetvandstereo/10" target="auto_iframe"><img class="auto_10" src="/updatetvandstereo/res/auto_r.gif" alt=""></a>
+		</div>
+		<div class="auto_iframe_holder">
+			<iframe src="https://www.youtube.com/embed/KdK5jLASAV4"
+				name="auto_iframe" width=100% height=100%></iframe>
+		</div>
+		<div class="auto_product_info_holder">
+		<p>Lorem</p>
+		</div>
+		<script>
+		$(".auto_first").click(function() {replacerAE("dicks");});
+		$(".auto_2").click(function() {replacerAE("not dicks");});
+		</script>
+	</div>
+</body>
+</html>
